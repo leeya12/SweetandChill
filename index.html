@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet & Chill</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+
+  <!-- Navbar -->
+  <div class="navbar-container">
+    <ul class="navbar">
+      
+      <li><a href="index.html" class="active">Home</a></li>
+
+      <li class="dropdown">
+        <a href="menu.html">Menu ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="menu.html#dessert">Dessert</a></li>
+          <li><a href="menu.html#drinks">Drinks</a></li>
+          <li><a href="menu.html#deals">Deals</a></li>
+        </ul>
+      </li>
+
+      <li><a href="about.html">About Us</a></li>
+
+      <li class="dropdown">
+        <a href="promotion.html">Promotion & News ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="promotion.html#payday">Pay Day Offers</a></li>
+          <li><a href="promotion.html#special">Special Day Offers</a></li>
+        </ul>
+      </li>
+
+      <li><a href="career.html">Career</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+
+      <li class="dropdown">
+        <a href="FAQs.html">FAQs ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="FAQs.html">Payment & Pricing</a></li>
+          <li><a href="FAQs.html">Health & Safety</a></li>
+          <li><a href="FAQs.html">Ordering</a></li>
+          <li><a href="FAQs.html">Cafe's Experience & Atmosphere</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+
+<div class="carousel">
+  <div class="carousel-track">
+    <img src="images/paydaybanner.jpg" alt="Pay Day" class="carousel-image">
+    <img src="images/specialbanner.jpg" alt="Special Day" class="carousel-image">
+    <img src="images/hiringbanner.jpg" alt="Hiring" class="carousel-image">
+  </div>
+</div>
+
+<div class="welcome-message">
+  <span>♡ Welcome to Sweet & Chill Cafe ♡</span>
+</div>
+
+<!-- Home Content -->
+<div class="home-content">
+
+<!-- Section 1: All Time Favorites -->
+<section class="section favorites">
+  <h2>All Time Favorites</h2>
+  <p>Our top picks that everyone loves — sweet, chill, and unforgettable!</p>
+  
+  <div class="menu-grid">
+    
+    <div class="menu-card">
+      <a href="menu.html#dessert">
+        <img src="images/mangosnow.jpg" alt="Dessert">
+        <h3>Mango Snow</h3>
+      </a>
+    </div>
+    
+    <div class="menu-card">
+      <a href="menu.html#drinks">
+        <img src="images/drinks.jpg" alt="Drink">
+        <h3>
+          Matcha Green Tea<br>
+          Premium Iced Chocolate<br>
+          Ttalgi Latte
+        </h3>
+      </a>
+    </div>
+    
+    <div class="menu-card">
+      <a href="menu.html#deals">
+        <img src="images/rendang.jpg" alt="Main Course">
+        <h3>Rendang Romance</h3>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Section 2: Pay Day Offers -->
+<section class="section payday">
+  <h2>Pay Day Offers</h2>
+  <p>Sweet discounts you can’t resist! Only available on selected dates.</p>
+  <a href="promotion.html#payday">
+    <img src="images/paydaybanner.jpg" alt="Pay Day Banner" class="section-banner">
+  </a>
+</section>
+
+
+<!-- Section 3: Special Day Offers -->
+<section class="section special-day">
+  <h2>Special Day Offers</h2>
+  <p>Celebrate Parent's Day, Festives, Birthdays & more with sweet surprises.</p>
+  <a href="promotion.html#special">
+    <img src="images/specialbanner.jpg" alt="Special Day Offer Banner" class="section-banner">
+  </a>
+</section>
+
+
+<!-- Section 4: We're Hiring -->
+<section class="section hiring">
+  <h2>We're Hiring!</h2>
+  <img src="images/team.jpg" alt="We're Hiring Banner" class="hiring-img">
+  <p>Join our team of fun, friendly dessert lovers. Apply now!</p>
+  <a href="career.html" class="btn-apply">Career Form</a>
+</section>
+
+
+</div>
+
+
+<div class="music-player">
+  <button id="music-btn" onclick="toggleMusic()">🎵</button>
+
+  <audio id="bg-music" loop>
+    <source src="audio/imyours.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<script>
+  const music = document.getElementById('bg-music');
+
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2025 Sweet & Chill | All rights reserved | <a href="https://www.instagram.com/sweetnchill._?igsh=MThkbWwxNm42ZThwdQ==" target="_blank">Instagram</a></p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet and Chill Cafe</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+
+  <!-- Navbar -->
+  <div class="navbar-container">
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+
+<li class="dropdown"> 
+  <a href="menu.html">Menu ▾</a>
+  <ul class="dropdown-content">
+    <li><a href="menu.html#dessert">Dessert</a></li>
+    <li><a href="menu.html#drinks">Drinks</a></li>
+    <li><a href="menu.html#deals">Deals</a></li>
+  </ul>
+</li>
+
+      <li><a href="about.html">About Us</a></li>
+
+      <li class="dropdown">
+        <a href="promotion.html">Promotion & News ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="promotion.html#payday">Pay Day Offers</a></li>
+          <li><a href="promotion.html#special">Special Day Offers</a></li>
+        </ul>
+      </li>
+
+      <li><a href="career.html">Career</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+
+     <li class="dropdown">
+  <a href="FAQs.html" class="active">FAQs ▾</a>
+  <ul class="dropdown-content">
+    <li><a href="FAQs.html#payment">Payment & Pricing</a></li>
+    <li><a href="FAQs.html#health">Health & Safety</a></li>
+    <li><a href="FAQs.html#ordering">Ordering</a></li>
+    <li><a href="FAQs.html#atmosphere">Cafe's Experience & Atmosphere"
+  </ul>
+</li>
+
+    </ul> <!-- ← CLOSE THE MAIN NAVBAR LIST HERE -->
+  </div>
+
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="images/faqsbanner.jpg" alt="Welcome to Sweet and Chill Cafe">
+  </div>
+
+<section class="faq-section">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+    
+    <!-- Payment & Pricing -->
+    <div class="faq-item" id="payment">
+      <button class="faq-question">💳 Payment & Pricing</button>
+      <div class="faq-answer">
+        <p><strong>Q:</strong> What payment methods do you accept?<br><strong>A:</strong> Cash, debit/credit cards & online banking.</p>
+        <p><strong>Q:</strong> Are prices inclusive of tax?<br><strong>A:</strong> Yes! All prices include SST and service charges.</p>
+        <p><strong>Q:</strong> Can I get a receipt?<br><strong>A:</strong> Sure! Printed or digital. Just let us know.</p>
+      </div>
+    </div>
+
+    <!-- Health & Safety -->
+    <div class="faq-item" id="health">
+      <button class="faq-question">🧼 Health & Safety</button>
+      <div class="faq-answer">
+        <p><strong>Q:</strong> How do you ensure food safety?<br><strong>A:</strong> Our team is trained in hygiene and food safety.</p>
+        <p><strong>Q:</strong> Do you cater to allergies?<br><strong>A:</strong> Yes, please let us know in advance!</p>
+        <p><strong>Q:</strong> Is the café cleaned regularly?<br><strong>A:</strong> Yes! Tables & surfaces are sanitised daily.</p>
+      </div>
+    </div>
+
+    <!-- Ordering -->
+    <div class="faq-item" id="ordering">
+      <button class="faq-question">📦 Ordering</button>
+      <div class="faq-answer">
+        <p><strong>Q:</strong> Can I order ahead?<br><strong>A:</strong> Definitely! DM us or WhatsApp to pre-order.</p>
+        <p><strong>Q:</strong> Do you offer delivery?<br><strong>A:</strong> Not yet, but self-pickup is available.</p>
+        <p><strong>Q:</strong> Can I customize my order?<br><strong>A:</strong> Yess! Let us know your dreamy requests ✨</p>
+      </div>
+    </div>
+
+    <!-- Café Experience -->
+    <div class="faq-item" id="atmosphere">
+      <button class="faq-question">☕ Café Experience & Atmosphere</button>
+      <div class="faq-answer">
+        <p><strong>Q:</strong> Do you have Wi-Fi?<br><strong>A:</strong> Yes, it's free & fast 💻</p>
+        <p><strong>Q:</strong> Is it family-friendly?<br><strong>A:</strong> Yes! Cozy vibes for all ages 💖</p>
+        <p><strong>Q:</strong> Can I study or work there?<br><strong>A:</strong> Absolutely! Many of our customers do 💼</p>
+      </div>
+    </div>
+
+<!-- Cute Note Box -->
+  <div class="cute-note">
+    <p>Got questions or want to know more? <br>Call us at <a href="tel:+60123456789">+60 17-601-3741</a></p>
+  </div>
+</section>
+
+
+  </div>
+</section>
+
+
+ <div class="footer">
+    <p>© 2025 Sweet & Chill | All rights reserved | <a href="https://www.instagram.com/sweetnchill._?igsh=MThkbWwxNm42ZThwdQ==" target="_blank"> Instagram</a></p>
+  </div>
+
+<script>
+  const faqs = document.querySelectorAll('.faq-item');
+
+  faqs.forEach(item => {
+    item.querySelector('.faq-question').addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet & Chill</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+
+  <!-- Navbar -->
+  <div class="navbar-container">
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="menu.html">Menu ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="menu.html#dessert">Dessert</a></li>
+          <li><a href="menu.html#drinks">Drinks</a></li>
+          <li><a href="menu.html#deals">Deals</a></li>
+        </ul>
+      </li>
+
+      <li><a href="about.html">About Us</a></li>
+
+      <li class="dropdown">
+        <a href="promotion.html">Promotion & News ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="promotion.html#payday">Pay Day Offers</a></li>
+          <li><a href="promotion.html#special">Special Day Offers</a></li>
+        </ul>
+      </li>
+
+      <li><a href="career.html" class="active">Career</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+
+      <li class="dropdown">
+        <a href="FAQs.html">FAQs ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="FAQs.html">Payment & Pricing</a></li>
+          <li><a href="FAQs.html">Health & Safety</a></li>
+          <li><a href="FAQs.html">Ordering</a></li>
+          <li><a href="FAQs.html">Cafe's Experience & Atmosphere</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="images/careerbanner.jpg" alt="Welcome to Sweet & Chill">
+  </div>
+
+<!-- Main Content -->
+<div class="job-application">
+  <form class="job-application-form" id="applicationForm">
+    <h1>Join Sweet & Chill 💖</h1>
+    <p style="text-align: center;">Fill out the form below to apply for a position at Sweet & Chill. We're excited to learn more about you!</p>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="position">Position Applying For:</label>
+    <select id="position" name="position" required>
+      <option value="">--Select Position--</option>
+      <option value="barista">Barista</option>
+      <option value="server">Server</option>
+      <option value="cashier">Cashier</option>
+      <option value="kitchen">Kitchen Staff</option>
+    </select>
+
+    <label for="resume">Upload Resume (PDF/DOC):</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+    <label for="message">Why do you want to join us?</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <input type="submit" value="Submit Application">
+
+    <p style="text-align: center;">Thank you for your interest in joining Sweet & Chill!
+    <br><br>
+    If your application is successful, we’ll get in touch via email within two weeks.
+    <br><br>
+    We truly appreciate your patience.</p>
+  </form>
+</div>
+
+<!-- JavaScript to prevent actual submission and refresh page -->
+<script>
+  document.getElementById('applicationForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent actual submission
+    alert("Application submitted!"); // Optional: add a friendly message
+    location.reload(); // Reloads the current page
+  });
+</script>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2025 Sweet & Chill | All rights reserved | <a href="https://www.instagram.com/sweetnchill._?igsh=MThkbWwxNm42ZThwdQ==" target="_blank">Instagram</a></p>
+  </div>
+
+</body>
+</html>
